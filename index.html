@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"></meta>
+    <title>Weather Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"></link>
+    <link rel="stylesheet" href="css/style.css"></link>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <div class="row topbar" id="title">
+            <div class="col-xs-1 boticon">
+                <img src="img/avatar.png"></img>
+            </div>
+            <div class="col-xs-10 botdetails">
+                <h3> Weather Bot </h3>
+                <p>online</p>
+            </div>
+            <div class="col-xs-1 botmenu">
+
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="img/menu.png"></img>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <ul class="list-group">
+
+                  <a class="list-group-item" id="dark">Dark Theme</a>
+                  <a class="list-group-item" id="light">Light Theme</a>
+                  <a class="list-group-item" id="basic">Basic Theme</a>
+                </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+      <div class="container-fluid pad" >
+        <div id="section">
+          <div id="botmsg">
+            Hello! I can tell you the weather in your city if you type it in..
+
+          </div>
+
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="footer" class="row">
+        <div class="col-xs-11 chatinput">
+          <input id="city" type="text" name="" placeholder="Enter your message"></input>
+        </div>
+        <div class="col-xs-1 sendicon" id="send">
+          <img src="img/send.png"></img>
+        </div>
+      </div>
+    </div>
+
+  <script src="js/script.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

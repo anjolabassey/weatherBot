@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+
+}
+body {
+  font-family: 'Dosis', sans-serif;
+  
+  
+}
+
+.topbar {
+  background-color: rgb(126, 54, 177);
+  color: white;
+}
+
+.boticon{
+  margin-top: 15px;
+
+}
+.botmenu {
+  margin-top: 15px;
+
+}
+
+.pad {
+  padding: 0;
+}
+#section {
+  height: 534px;
+  padding: 10px;
+  overflow: auto;
+  position: relative;
+  background-image: url('../img/light.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+#botmsg {
+  margin-top: 10px;
+  padding: 10px;
+  background: grey;
+  color: black;
+  margin-top: 10px;
+  font-size: 18px;
+  position: relative;
+  border-radius: 5px;
+  float: left;
+  clear: both;
+
+}
+
+#usermsg {
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 10px;
+  background: #D6B4EA;
+  color: black;
+  font-size: 18px;
+  position: relative;
+  border-radius: 5px;
+  float: right;
+  clear: both;
+}
+
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  background-color: lightgrey;
+
+}
+
+input[type="text"] {
+  height: 50px;
+  width: 98%;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.sendicon {
+  background-color: rgb(126, 54, 177);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  right: 15px;
+  padding: 8px;
+  top: 8px;
+  box-shadow: 2px 3px 3px grey;
+
+}
+
+.dark {
+  background-color: forestgreen;
+
+}
+.darkicon {
+  background-color: forestgreen;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  right: 15px;
+  padding: 8px;
+  top: 8px;
+  box-shadow: 2px 3px 3px grey;
+}
+.light {
+  background-color: peru;
+}
+.lighticon {
+  background-color: peru;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  right: 15px;
+  padding: 8px;
+  top: 8px;
+  box-shadow: 2px 3px 3px grey;
+}
+
+ .list-group {
+    margin-right: 0;
+    cursor: pointer;
+  
+}
+
+

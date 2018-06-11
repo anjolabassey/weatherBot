@@ -6,15 +6,19 @@ var temp;
 var description;
 var city;
 
-
-
 $(function() {
   $("#send").click(function() {
     newInput = $("#city").val();
     chat = $("#section");
 
-
     
+
+    // function getCity(newInput) {
+    //   var check = /\bin\b/;
+    //   var checkResult = newInput.match(check);
+      
+    //   checkResult.index += 3;
+    // }  
 
     if (newInput.length < 1) {
       alert("Please enter a city");
@@ -23,22 +27,19 @@ $(function() {
       chat.append("<div id='usermsg'>" + newInput + "</div>");
     }
 
-    function getCity(newInput) {
-      var check = /\bin\b/;
-      var checkResult = newInput.search(/\b(in)\b/);
-      if (checkResult !== null) {
-        return checkResult.index += 3;
+    // function getCity(newInput) {
+    //   var check = newInput.match(/\bin\b/);
+    //   var checkResult = check.index +=3;
 
-      }
-      
-    }
-    var city = getCity(newInput);
-    console.log(city);
+    //   return newInput.slice(checkResult);
+    // } 
+   
+    // city = getCity(newInput);
+    // console.log(city);
 
     //get info from the api
     
     $.ajax({
-
       url: 'http://api.openweathermap.org/data/2.5/weather?q=' + newInput + "&units=metric" + "&appid=9ed82c30d573696e9eca843bb3eae322",
       type: "GET",
       dataType: "json",

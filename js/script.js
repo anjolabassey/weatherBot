@@ -7,7 +7,7 @@ var description;
 var city;
 
 function getCity (newInput) {
-  
+
   var check = newInput.match(/\bin\b/);
   var checkResult = check.index +=3;
 
@@ -27,8 +27,6 @@ $(function() {
     }
 
     city = getCity(newInput);
-
-    console.log(city);
     
     //get info from the api
     $.ajax({

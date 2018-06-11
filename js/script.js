@@ -6,19 +6,18 @@ var temp;
 var description;
 var city;
 
+function getCity (newInput) {
+  
+  var check = newInput.match(/\bin\b/);
+  var checkResult = check.index +=3;
+
+  return newInput.slice(checkResult);
+}
+
 $(function() {
   $("#send").click(function() {
     newInput = $("#city").val();
-    chat = $("#section");
-
-    
-
-    // function getCity(newInput) {
-    //   var check = /\bin\b/;
-    //   var checkResult = newInput.match(check);
-      
-    //   checkResult.index += 3;
-    // }  
+    chat = $("#section"); 
 
     if (newInput.length < 1) {
       alert("Please enter a city");
@@ -27,20 +26,13 @@ $(function() {
       chat.append("<div id='usermsg'>" + newInput + "</div>");
     }
 
-    // function getCity(newInput) {
-    //   var check = newInput.match(/\bin\b/);
-    //   var checkResult = check.index +=3;
+    city = getCity(newInput);
 
-    //   return newInput.slice(checkResult);
-    // } 
-   
-    // city = getCity(newInput);
-    // console.log(city);
-
-    //get info from the api
+    console.log(city);
     
+    //get info from the api
     $.ajax({
-      url: 'http://api.openweathermap.org/data/2.5/weather?q=' + newInput + "&units=metric" + "&appid=9ed82c30d573696e9eca843bb3eae322",
+      url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=metric" + "&appid=9ed82c30d573696e9eca843bb3eae322",
       type: "GET",
       dataType: "json",
       success: function(data) {
@@ -51,7 +43,6 @@ $(function() {
       },
       error: function() {
         chat.append("<div id='botmsg'>" + "City not found..Please enter a valid city" + "</div>");
-
 
       }
 
